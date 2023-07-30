@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HeroGram</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css">
+    <script src="https://kit.fontawesome.com/1f35d1f179.js" crossorigin="anonymous">
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+  function SubForm (){
+      $.ajax({
+          url:'https://api.apispreadsheets.com/data/RiQbfSt24GbxyrCG/',
+          type:'post',
+          data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Form Data Submitted :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+      });
+  }
+  </script>
+</head>
+<body class="container" >
+    <section id="home" >
+
+        <nav class="navbar">
+            <div class="nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo of We Buy Old">
+                </div>
+                <div class="items">
+                    <div class="menu-items">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            
+                            <!-- <li><a href="#Product">Latest Updates</a></li> -->
+                            <li><a href="#Categories">Categories</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            
+                            <li><a href="#Categories">Chat</a></li>
+                          </ul>                      
+                    </div>
+                </div>
+            </div>            
+        </nav>
+        
+        <div class="row">    
+                <div class="box1 img-sec">
+                    <img src="./img/main_img.png" alt="">
+                </div>
+                <div class="box1 text-sec">
+                    <h1 class="tagline"> In unity<br> there is strength. </h1>
+                    <p>We deeply appreciate the value of your love for superheroes, as it enriches our lives with a profound sense of wonder and admiration.</p>
+                    <a class="btn" href="#Categories">Let's Go!! &#8594;</a>
+                </div>
+        </div>
+    </section>
+    
+    
+  
+
+
+   
+
+
+    <section id="Categories">
+        <h2 class="heading">Categories</h2>
+        <div class="all-cat">
+
+        </div>
+    </section>  
+
+<!-- 
+     <section id="Product">
+        <h2 class="heading2" style="margin-right: 60px;">Latest Update</h2>
+        <div class="semi-prod">
+        
+        </div>
+    </section> -->
+
+
+    <section id="About">
+        <div class="main-head">
+            <p>About Us</p>
+        </div>
+        <div class="about-section">
+            <div class="about-content">
+                <div class="box4 profile">
+                    <img src="./img/logo.png" alt="">
+                    <h1>HeroGram</h1>
+                </div>
+                <div class="box4 tag-content">
+                    <p> We are an all-in-one platform that offers a diverse range of entertainment and interactive experiences. Our site is specially designed for superhero fans to bring joy and engagement to users of all ages.</p>
+                    <p>In addition to that, we provide a dynamic group chat feature that allows you to connect and interact with like-minded individuals from around the world. Share your interests, exchange ideas, and make new friends in our vibrant community.</p>
+                </div>    
+            </div>
+            <div class="feature">
+                <p>&#10004;    Chat</p>
+                <p>&#10004;    Read</p>
+                <p>&#10004;    Watch</p>   
+                   
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <div class="main-head">
+            <p>Contact</p>
+        </div>
+        <div class="form-wrapper">
+            <div class="myform">
+
+                <form class="form" id="myForm">
+                    <p>Let us know your questions , suggestion and concerns by filling out the contact form below.</p>
+                   
+                    <div class="form-group">
+                        <label for="Username">Full Name</label>
+                        <input type="text" name="Full_Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="E-Mail">E-Mail</label>
+                        <input type="email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">Phone</label>
+                        <input type="tel" name="Phone" minlength="10" maxlength="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+                        <textarea name="Message"  required></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="btn-grad" onclick="SubForm()">submit</button>
+            </div>
+
+            <div class="details">
+                <a href="https://goo.gl/maps/GLFsaV4iUyc6Nzjs8" class="loc" target="_blank">
+                    <i class="fas fa-map-marker-alt fa-2x"></i> 
+                    <h2>Location</h2>
+                    <p>Vadodara Gujarat India</p>
+                </a>
+                <a href="mailto:webuyold@gmail.com" class="email">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h2>E-Mail</h2>
+                    <p>webuyold@gmail.com</p>
+                </a>
+                <i class="fas fa-phone-alt fa-2x"></i>
+                <h2>Call</h2>
+                <p>8128662723</p>
+                
+                <div class="icons">
+                    <a href="" target="_blank">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </a>
+                    <a href="https://instagram.com/webuyold_hackathon?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <i class="fab fa-instagram-square fa-3x"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://wa.me/918128662723" target="_blank">
+                        <i class="fab fa-whatsapp-square fa-3x"></i>
+                    </a>
+                </div>
+                <div class="sell_prod">
+                    <div class="seller">
+                        <h3>To Sell Your Product</h3>
+                        <a class="btn" href="https://forms.gle/AgRPbCtxrMMF9ebW6" target="_blank">Click Here </a>
+                    </div>
+                    <div class="seller">
+                        <h3>To Sell For Scrap</h3>
+                        <a class="btn" href="https://forms.gle/GhbRK9eZzqkuKYB7A" target="_blank">Click Here </a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="">
+                <i class="fab fa-facebook fa-3x"></i>
+            </a>
+            <a href="https://instagram.com/webuyold_hackathon?igshid=YmMyMTA2M2Y=" target="_blank"">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter fa-3x"></i>
+            </a> <br>
+            <a class="terms" href="./T&C.html">Terms & Condition</a>
+            <p>HeroGram &copy; All rights reserved</p>
+        </div>
+     </footer>
+</body>
+<script>
+    const categories = [
+  { name: 'News', imgSrc: './img/news.png', href: '2_electronic.html' },
+  { name: 'Comic', imgSrc: './img/comic.png', href: '1_automobile.html' },
+  { name: 'Movies', imgSrc: './img/movies.png', href: '3_sport.html' },
+  { name: 'Chat', imgSrc: './img/chat.png', href: 'http://localhost/herogram/chat/login.php' }
+];
+
+const allCat = document.querySelector('.all-cat');
+
+categories.forEach(category => {
+  const box = document.createElement('div');
+  box.classList.add('box2');
+  box.innerHTML = `
+    <img src="${category.imgSrc}" alt="">
+    <p>${category.name}</p>
+  `;
+  box.addEventListener('click', () => window.location.href = category.href);
+  allCat.appendChild(box);
+});
+
+
+
+
+// Get the element with class 'semi-prod'
+const semiProd = document.querySelector('.semi-prod');
+
+// Set the product details in an array for easy iteration
+// const products = [
+// {
+// href: './product/11.html',
+// imgSrc: './img/Product img/Auto-mobile/product1/bmw_2.jpg',
+// price: '₹80,50,000',
+// yearAndMileage: '2021- 16000 KM',
+// title: 'BMW Z4',
+// location: 'Noida Extension'
+// },
+// {
+// href: './product/21.html',
+// imgSrc: './img/Product img/Electronic/product1/mac_1.jpg',
+// price: '₹29,999',
+// yearAndMileage: '2015',
+// title: 'MacBook Air',
+// location: 'Vadodara Gujarat'
+// },
+// {
+// href: './product/31.html',
+// imgSrc: './img/Product img/Sport/product1/gym_1.jpg',
+// price: '₹6,400',
+// yearAndMileage: '2018',
+// title: 'Bench Press',
+// location: 'Pune Maharashtra'
+// },
+// {
+// href: './product/41.html',
+// imgSrc: './img/Product img/Home/product1/table_1.jpg',
+// price: '₹8,200',
+// yearAndMileage: '2020',
+// title: 'Mango Wood Study Table',
+// location: 'Valsad Gujarat'
+// }
+// ];
+
+// Iterate over the products array and create the product elements inside semi-prod div
+for (let i = 0; i < products.length; i++) {
+const product = products[i];
+
+const productElement = document.createElement('div');
+productElement.classList.add('box3');
+productElement.onclick = () => window.location.href = product.href;
+
+const prodImgElement = document.createElement('div');
+prodImgElement.classList.add('prod_img');
+
+const imgElement = document.createElement('img');
+imgElement.src = product.imgSrc;
+imgElement.alt = product.title;
+
+const detailsProdElement = document.createElement('div')
+detailsProdElement.classList.add('details_prod');
+
+const h3Element = document.createElement('h3');
+h3Element.textContent = product.price;
+
+const p1Element = document.createElement('p');
+p1Element.textContent = product.yearAndMileage;
+
+const h4Element = document.createElement('h4');
+h4Element.textContent = product.title;
+
+const p2Element = document.createElement('p');
+p2Element.textContent = product.location;
+
+detailsProdElement.append(h3Element, p1Element, h4Element, p2Element);
+prodImgElement.append(imgElement);
+
+productElement.append(prodImgElement, detailsProdElement);
+semiProd.append(productElement);
+}
+
+// Create the link for 'See All' button dynamically
+const seeAllLinkElement = document.createElement('a');
+seeAllLinkElement.href = './all_product.html';
+seeAllLinkElement.classList.add('btn2');
+seeAllLinkElement.textContent = 'See All';
+
+semiProd.after(seeAllLinkElement);
+
+</script>
+</html>

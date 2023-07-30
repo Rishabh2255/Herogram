@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* --------------------------- utility class --------------------------- */
+
+.ylw{
+    color: #f7df1e;
+}
+
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+.grey{
+    color: #f5f6f6;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.blue{
+    color: #1411d2;
+}
+
+
+
+
+
+/* ----------------------------- 1. HOME --------------------------------------- */
+
+#home{
+    height: 80vh;
+    /* background:radial-gradient(#fff,#f4f7c1); */
+}
+
+/* ---------------------- 1.1 Navbar ------------------------- */
+
+.navbar{
+    position: fixed;
+    width: 80%;
+    background-color: #ffffff;
+    top: 0%;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+
+.items{
+    margin-top: 30px;
+    display: flex;
+}
+
+.items a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.items ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.items ul li a:hover,
+.items ul li a:active{
+    color: #1411d2;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+
+/* ------------------------------ 1.2 Main content -------------------------- */
+
+.row{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    margin-top: 13vh;
+
+}
+
+.box1{
+    /* border: 1px solid black; */
+    flex-basis: 49%;
+    height: 60vh;
+    margin-top: 70px;
+}
+
+.box1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.img-sec{
+    transform: translateX(-150%);
+    animation:about-image-animation 1.3s ease-in-out forwards;
+}
+
+@keyframes about-image-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.text-sec{
+    transform: translateX(150%);
+    animation:about-text-animation 1.3s ease-in-out forwards;
+}
+@keyframes about-text-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.box1 h1{
+    margin-top: 8vh;
+    font-size: 45px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #c63232;
+}
+
+.box1 p{
+    font-size: 32px;
+}
+
+.btn{
+    display: inline-block;
+    color: #1411d2;
+    margin: 30px 0px;
+    padding: 8px 30px;
+    border: 2px solid #1411d2;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color:#1411d2;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+/* ----------------------------- 2. Categories --------------------------------------- */
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 25vh 0px 7vh 520px;
+    border-bottom: 4px solid #1411d2;
+    display: inline-block;
+}
+
+
+.all-cat{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box2{
+    flex-basis: 24%;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f5f6f6;
+}
+
+.box2:hover{
+    transform: translateY(-6px);
+    transition-duration: 0.5s;
+}
+
+.box2 img{
+    width: 100%;
+    height: 85%;
+}
+
+.box2 p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* -------------------------------- 3. Product section -------------------------------- */
+
+.semi-prod{
+    display: flex;
+    justify-content: space-between;
+}
+.heading2{
+    text-align: center;
+    font-size: 30px;
+    margin: 25vh 0px 7vh 470px;
+    border-bottom: 4px solid #1411d2;
+    display: inline-block;
+}
+.box3{
+    flex-basis: 24%;
+    height: 330px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #f5f6f6;
+}
+.box3:hover{
+    transform: translateY(-6px);
+    transition-duration: 0.5s;
+}
+
+
+.box3 .prod_img{
+    margin: 8px;
+    height: 180px;
+}
+.box3 .prod_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box3 .details_prod{
+    margin:15px 0px 5px 15px;
+}
+
+
+.box3 .details_prod p{
+    color: #414141;
+    margin-bottom: 5px;
+}
+
+.btn2{
+    display: inline-block;
+    color: #1411d2;
+    margin: 30px 0px 30px 0px;
+    float:right;
+    padding: 8px 30px;
+    border: 2px solid #1411d2;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+}
+
+.btn2:hover{
+    background-color:#1411d2;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+
+
+/* -------------------------------- 4. About -------------------------- */
+
+.about-section{
+    box-shadow: 0px 0px 10px 0 rgba(51, 51, 51, 0.212);
+    padding: 10px;
+}
+
+.main-head{
+    margin-top: 15vh;
+    border-bottom: 4px solid #1411d2;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+
+.box4{
+    height: 55vh;
+    flex-basis: 46%;
+}
+
+.box4 img{
+    width: 50%;
+    height: 68%;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.box4 h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.box4 p{
+    font-size: 20px;
+    margin: 30px 0px 0px 0px;
+    text-align: justify;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    
+}
+
+.feature p{
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+    flex-basis: 24%;
+    text-align: center;
+}
+
+
+/* ------------------------------ 5.contact ----------------------- */
+.form-wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0 rgba(51, 51, 51, 0.212);
+}
+.email{
+    text-decoration: none;
+    color: #000;
+}
+.loc{
+    text-decoration: none;
+    color: #000;
+}
+.form{
+    max-height: 100%;
+    flex-basis: 49%;
+    padding: 30px;
+}
+
+.details{
+    height: 100%;
+    flex-basis: 49%;
+    padding: 30px;
+    
+}
+
+i{
+
+    padding-right: 1rem;
+    color: #1411d2;
+}
+
+.icons{
+    padding-right: 10px;
+    display: inline-block;
+    color: #1411d2;
+    position: static;
+    top: 66px;
+
+}
+
+.icons a{
+    text-decoration: none;
+}
+.details h2{
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.details p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: #c63232;
+}
+
+
+.form 
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.form p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form label::after{
+    content: '*';
+    color: #1411d2;
+}
+.form-group{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.form-group label{
+    display: block;
+    padding: 0.5rem 0;
+       
+}
+.form-group input{
+    padding: 5px;
+    width: 97%;
+    font-size: 18px;
+    border:none;
+    border-bottom: 2px solid #555;
+    outline: none;
+    background: none;
+}
+.form-group textarea{
+    padding: 2px;
+    width: 97%;
+    font-size: 18px;
+    text-transform: capitalize;
+    border:none;
+    border-bottom: 2px solid #555;
+    background: none;
+    /* padding: 1r; */
+    resize: none;
+}
+
+.btn-grad {
+   margin: 8px;
+   padding: 8px 35px;
+   text-align: center;
+   text-transform: uppercase;
+   background-size: 200% auto;
+   color: #1411d2; 
+   border:2px solid #1411d2;                         
+   border-radius: 10px;
+   display: block;
+   margin: 0 auto;
+   cursor: pointer;
+   font-size: 20px;
+   outline: none;
+   border-radius: 50px; 
+   background-color: #fff;
+   transition: 0.5s;
+ }
+
+.btn-grad:hover {
+   background-position: right center;
+   color: #fff;
+   background-color: #1411d2;
+   text-decoration: none;
+   letter-spacing: 3px;
+}
+
+.seller{
+    margin-top: 40px;
+}
+
+.seller h3{
+    color: #000;
+    font-size: 22px;
+}
+
+.seller .btn{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+
+.sell_prod{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* ------------------------------ 7. Footer ----------------------------------- */
+
+
+footer{
+    height: 10%;
+    background-color: #222;
+    text-align: center;
+    position: static;
+    margin-top: 11vh;
+}
+
+.social a{
+    text-decoration: none;
+}
+.footer i{
+    color: #fff;
+    padding: 10px 10px ;
+}
+.footer p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* #############################  Categories Page ################################### */
+
+
+
+.heading1{
+        text-align: center;
+        font-size: 30px;
+        margin: 13vh 0px 10vh 440px;
+        border-bottom: 4px solid #1411d2;
+        display: inline-block;
+}
+
+
+/* ####################################################################################*/
+/* ###########################   Single Product Page ################################## */
+/* ##################################################################################### */
+
+.single-product{
+    margin-top: 15vh;
+    display: flex;
+}
+
+
+/* ---------------- 1. Image portion --------------------- */
+
+.main-image{
+    width: 49%;
+    height: 60vh;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.main-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.small-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.small-row-img{
+    height: 120px;
+    flex-basis: 24%;
+}
+.small-row-img img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/* ---------------------- 2. Product Detail Portion --------------- */
+
+.main-details{
+    width: 49%;
+    padding-top: 5px;
+}
+
+.prod_path{
+    font-size: 13px;
+    color: #414141;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.prod_path a{
+    text-decoration: none;
+    color: #414141;
+}
+
+.prod_price{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.prod_name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+.seller_loc{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.small-head{
+    font-size: 23px;
+    border-bottom: 3px solid #f7df1e;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.prod_des{
+    font-size: 15px;
+    width: 85%;
+    text-align: justify;
+    height: 31vh;
+}
+
+.seller_name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.seller_add{
+    font-size: 18px;
+    margin-bottom: 8px;
+    cursor: text;
+}
+
+.seller_no{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* ###############################################################################
+########################## ALL PRODUCT ########################################
+############################################################################# */
+
+
+.row1{
+    margin-bottom: 30px;
+}
+
+
+/* ###############################################################################
+############################# Terms and condition #################################
+############################################################################# */
+.terms{
+    color: #fff;
+}
+.navbar2{
+    width: 100%;
+    z-index: 10;
+}
+
+.main-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.links-box{
+    background-color: #fff;
+    flex-basis: 25%;
+    border: 1px solid black;
+}
+
+.links-box h3{
+    margin: 100px 0px 0px 15px;
+}
+
+.list-items{
+    margin: 40px 0px 0px 25px;
+}
+
+.list-items li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.list-items li{
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+.list-items li a:hover{
+    color: #dfb200;
+    text-decoration: solid;
+}
+
+.content-box{
+    background-color: #fff;
+    flex-basis: 70%;
+    border: 1px solid black;
+    padding: 0px 20px 0px 20px;
+    text-align: justify;
+}
+
+.content-box h2{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.content-box h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content-box p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------------------News------------------------------------------------------ */
+
+.n1{
+
+height: 600px;
+width: 600px;
+
+}
